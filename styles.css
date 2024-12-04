@@ -27,7 +27,6 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    transform: translateX(-135%);
     margin-left: 20px;
 }
 
