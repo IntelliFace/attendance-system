@@ -22,74 +22,72 @@
         </div>
     </header>
 
-    <main class="container mt-5">
-        <div class="row g-4">
-            <!-- Attendance Section -->
-            <div class="col-md-6">
-                <div class="card p-4">
-                    <h3 class="text-center mb-4">Today's Attendance</h3>
-                    <a href="/start" class="btn btn-primary w-100 mb-3">Take Attendance</a>
-                    <div class="table-responsive">
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Name</th>
-                                    <th>ID</th>
-                                    <th>Time</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>OSAMA</td>
-                                    <td>0001</td>
-                                    <td>10:34:15 AM</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>ABDULLAH</td>
-                                    <td>0002</td>
-                                    <td>10:40:24 AM</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>EMİR</td>
-                                    <td>0003</td>
-                                    <td>11:02:08 AM</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>ABDULLRAHMAN</td>
-                                    <td>0004</td>
-                                    <td>11:27:32 AM</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="4" class="text-center">04 attendances records.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+    <main class="container mt-5 main-content">
+        <!-- Attendance Section -->
+        <div class="card-container">
+            <div class="card p-4">
+                <h3 class="text-center mb-4">Today's Attendance</h3>
+                <a href="/start" class="btn btn-primary w-100 mb-3">Take Attendance</a>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>ID</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>OSAMA</td>
+                                <td>0001</td>
+                                <td>10:34:15 AM</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>ABDULLAH</td>
+                                <td>0002</td>
+                                <td>10:40:24 AM</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>EMİR</td>
+                                <td>0003</td>
+                                <td>11:02:08 AM</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>ABDULLRAHMAN</td>
+                                <td>0004</td>
+                                <td>11:27:32 AM</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="text-center">04 attendances records.</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
+        </div>
 
-            <!-- Add User Section -->
-            <div class="col-md-6">
-                <div class="card p-4">
-                    <h3 class="text-center mb-4">Add New User</h3>
-                    <form action="/add" method="POST" enctype="multipart/form-data">
-                        <div class="mb-3">
-                            <label for="newusername" class="form-label">User Name*</label>
-                            <input type="text" id="newusername" name="newusername" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="newuserid" class="form-label">User ID*</label>
-                            <input type="number" id="newuserid" name="newuserid" class="form-control" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Add User</button>
-                    </form>
-                    <p class="text-center mt-3">Total Users: 04</p>
-                </div>
+        <!-- Add User Section -->
+        <div class="card-container">
+            <div class="card p-4">
+                <h3 class="text-center mb-4">Add New User</h3>
+                <form action="/add" method="POST" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="newusername" class="form-label">User Name*</label>
+                        <input type="text" id="newusername" name="newusername" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="newuserid" class="form-label">User ID*</label>
+                        <input type="number" id="newuserid" name="newuserid" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Add User</button>
+                </form>
+                <p class="text-center mt-3">Total Users: 04</p>
             </div>
         </div>
     </main>
